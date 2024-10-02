@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
@@ -48,6 +49,9 @@ const config: Config = {
           900: "#001633",
           950: "#000B19",
         },
+      },
+      fontFamily: {
+        serif: ['"Times New Roman"', ...defaultTheme.fontFamily.serif],
       },
     },
   },
