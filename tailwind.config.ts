@@ -51,7 +51,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        serif: ['"Times New Roman"', ...defaultTheme.fontFamily.serif],
+        serif: ['"roslindale"', ...defaultTheme.fontFamily.serif],
       },
     },
   },
