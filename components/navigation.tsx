@@ -2,10 +2,10 @@ import Link from 'next/link'
 
 const Navigation = () => {
     const className =
-        'text-secondary-500 border-secondary-500 rounded-full border px-4 py-1 hover:bg-secondary-700/20'
+        'text-secondary-500 text-xs border-secondary-500 rounded-full border px-3 py-1 hover:bg-secondary-700/20'
 
     return (
-        <nav className="flex justify-around px-6 py-2">
+        <nav className="flex justify-around bg-primary-900 px-6 py-2">
             <section className="flex flex-1 items-center gap-2">
                 <Link href="/" className={className}>
                     Services
@@ -17,7 +17,7 @@ const Navigation = () => {
                     Qui suis-je ?
                 </Link>
             </section>
-            <section className="flex-auto text-center font-serif text-base">
+            <section className="flex-auto text-center font-serif text-base uppercase tracking-wide">
                 Julia Caro
             </section>
             <section className="flex flex-1 items-center justify-end">
