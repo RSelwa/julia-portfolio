@@ -1,3 +1,7 @@
 {
-  "cSpell.words": ["roslindale"]
+    "cSpell.words": ["roslindale"],
+    "tailwindCSS.experimental.classRegex": [
+        ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+        ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+    ]
 }
