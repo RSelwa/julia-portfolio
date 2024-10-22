@@ -1,16 +1,18 @@
-import Image from 'next/image'
-import Header from '@/public/header.png'
-import { buttonStyle } from '@/utils/style'
 import GridCard from '@/components/home/grid-card'
+import Button from '@/components/ui/buttonv2'
+import Link from '@/components/ui/link'
+import Header from '@/public/header.png'
+import Image from 'next/image'
 
 export default function Home() {
     return (
         <main className="space-y-16">
             <section className="relative mx-auto mb-72 mt-8 flex w-11/12 flex-col items-center justify-center py-64 text-center">
                 <Image
+                    priority={false}
                     src={Header}
                     alt=""
-                    className="rounded-4xl absolute left-0 top-0 -z-10 h-full w-full bg-no-repeat object-cover object-center opacity-55"
+                    className="absolute left-0 top-0 -z-10 h-full w-full rounded-4xl bg-no-repeat object-cover object-center opacity-55"
                 />
                 <article className="space-y-6">
                     <h1 className="font-serif text-8xl text-secondary-500">
@@ -25,12 +27,8 @@ export default function Home() {
                         !
                     </p>
                     <div className="mx-auto flex w-fit gap-4">
-                        <button className={buttonStyle()}>
-                            Voir les services
-                        </button>
-                        <button className={buttonStyle()}>
-                            C'est partiiiii !
-                        </button>
+                        <Button>Voir les services</Button>
+                        <Link variant="filled">C'est partiiiii !</Link>
                     </div>
                 </article>
             </section>
@@ -69,8 +67,18 @@ export default function Home() {
                 </GridCard>
             </section>
             <section>
-                <Image src={Header} alt="header" className="opacity-30" />
-                <Image src={Header} alt="header" className="opacity-30" />
+                <Image
+                    priority={false}
+                    src={Header}
+                    alt="header"
+                    className="opacity-30"
+                />
+                <Image
+                    priority={false}
+                    src={Header}
+                    alt="header"
+                    className="opacity-30"
+                />
                 <article>
                     <h2>
                         Des services graphiques adaptés à vos besoins et vos

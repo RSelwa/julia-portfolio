@@ -1,12 +1,13 @@
-import React, { ReactNode } from 'react'
+import Button from "@/components/ui/buttonv2"
+import { ReactNode } from "react"
 
 type Props = {
     title: string
     children: ReactNode
-    color?: 'primary' | 'secondary'
+    color?: "primary" | "secondary"
 }
 
-const GridCard = ({ title, children, color = 'secondary' }: Props) => {
+const GridCard = ({ title, children, color = "secondary" }: Props) => {
     return (
         <article
             data-style={color}
@@ -15,9 +16,12 @@ const GridCard = ({ title, children, color = 'secondary' }: Props) => {
             <h3 className="text-xl font-medium">{title}</h3>
             <p className="w-3/4 font-light">{children}</p>
             <div className="flex items-center gap-4">
-                <button className="rounded-full border border-primary-500 bg-primary-500 px-4 py-2 font-medium text-secondary-100 group-data-[style=primary]:border-secondary-50 group-data-[style=primary]:bg-secondary-50 group-data-[style=primary]:text-neutral-900">
+                <Button
+                    size="lg"
+                    className="border border-primary-500 bg-primary-500 text-secondary-100 group-data-[style=primary]:border-secondary-50 group-data-[style=primary]:bg-secondary-50 group-data-[style=primary]:text-neutral-900"
+                >
                     C'est parti
-                </button>
+                </Button>
             </div>
         </article>
     )
