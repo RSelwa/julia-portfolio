@@ -4,10 +4,13 @@ import Button from "@/components/ui/buttonv2"
 import Link from "@/components/ui/link"
 import Header from "@/public/header.png"
 import Image from "next/image"
+import { PROJECT } from "@/constants/projects"
 
 export default function Home() {
+    const projects = [PROJECT]
+
     return (
-        <main className="space-y-16">
+        <main className="space-y-16 pb-16">
             <section className="relative mx-auto mb-72 mt-8 flex w-11/12 flex-col items-center justify-center py-64 text-center">
                 <Image
                     priority={false}
@@ -69,7 +72,15 @@ export default function Home() {
                     projets.
                 </GridCard>
             </section>
-            <ScrollProject />
+            {projects.map(({ children, leftImage, rightImage }, i) => (
+                <ScrollProject
+                    key={i}
+                    leftImage={leftImage}
+                    rightImage={rightImage}
+                >
+                    {children}
+                </ScrollProject>
+            ))}
         </main>
     )
 }

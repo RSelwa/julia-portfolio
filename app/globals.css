@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: "roslindale";
-    src: url("/app/fonts/roslindale/RoslindaleVariable-VF-Testing.ttf")
-      format("ttf");
-  }
+    @font-face {
+        font-family: "roslindale";
+        src: url("/assets/fonts/roslindale/RoslindaleVariable-VF-Testing.ttf")
+            format("ttf");
+    }
 }
