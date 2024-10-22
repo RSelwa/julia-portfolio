@@ -1,5 +1,6 @@
 import { Project } from "@/types/project"
 import Header from "@/public/header.png"
+import Button from "@/components/ui/buttonv2"
 
 export const PROJECT: Project = {
     leftImage: {
@@ -21,7 +22,9 @@ export const PROJECT: Project = {
                 votre image de marque. Pour que votre concept soit
                 professionnel,cohérent et ne ressemble à aucun autre !
             </p>
-            <button>SERVICES GRAPHIQUES</button>
+            <Button variant="white-outlined" size="xl">
+                SERVICES GRAPHIQUES
+            </Button>
         </article>
     ),
 }

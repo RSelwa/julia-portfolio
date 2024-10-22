@@ -5,6 +5,8 @@ export const buttonStyle = cva("", {
         variant: {
             "white-filled": "bg-white text-neutral-900 border-white border",
             filled: "bg-secondary-500 text-neutral-900 border-secondary-500 border",
+            "white-outlined":
+                "border-palette-white text-palette-white border hover:bg-palette-white/20",
             outlined:
                 "border-secondary-500 text-secondary-500 border hover:bg-secondary-700/20",
         },

@@ -4,6 +4,7 @@ import defaultTheme from "tailwindcss/defaultTheme"
 const config: Config = {
     purge: false,
     content: [
+        "./constants/**/*.{js,ts,jsx,tsx,mdx}",
         "./utils/**/*.{js,ts,jsx,tsx,mdx}",
         "./pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,6 +13,9 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
+                palette: {
+                    white: "#F3F6FA",
+                },
                 primary: {
                     50: "#EBF3FA",
                     100: "#D7E7F4",
