@@ -1,8 +1,9 @@
-import GridCard from '@/components/home/grid-card'
-import Button from '@/components/ui/buttonv2'
-import Link from '@/components/ui/link'
-import Header from '@/public/header.png'
-import Image from 'next/image'
+import GridCard from "@/components/home/grid-card"
+import ScrollProject from "@/components/home/scroll-project"
+import Button from "@/components/ui/buttonv2"
+import Link from "@/components/ui/link"
+import Header from "@/public/header.png"
+import Image from "next/image"
 
 export default function Home() {
     return (
@@ -46,7 +47,9 @@ export default function Home() {
                     art est un équilibre entre simplicité et profondeur, un
                     regard personnel sur le monde qui m'entoure.
                 </p>
-                <button>Lire la suite</button>
+                <Button variant="white-filled" size="xl">
+                    Lire la suite
+                </Button>
             </section>
             <section className="mx-auto grid w-1/2 grid-cols-2 grid-rows-2 gap-4">
                 <GridCard title="Identité visuelle">
@@ -66,34 +69,7 @@ export default function Home() {
                     projets.
                 </GridCard>
             </section>
-            <section>
-                <Image
-                    priority={false}
-                    src={Header}
-                    alt="header"
-                    className="opacity-30"
-                />
-                <Image
-                    priority={false}
-                    src={Header}
-                    alt="header"
-                    className="opacity-30"
-                />
-                <article>
-                    <h2>
-                        Des services graphiques adaptés à vos besoins et vos
-                        envies.
-                    </h2>
-                    <p>
-                        De votre stratégie de marque à la réalisation de vos
-                        supports visuels, Studio Aïe vous accompagne dans le
-                        développement de votre image de marque. Pour que votre
-                        concept soit professionnel,cohérent et ne ressemble à
-                        aucun autre !
-                    </p>
-                    <button>SERVICES GRAPHIQUES</button>
-                </article>
-            </section>
+            <ScrollProject />
         </main>
     )
 }
