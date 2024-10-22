@@ -81,6 +81,12 @@ export default function Home() {
                     {children}
                 </ScrollProject>
             ))}
+            <article>
+                <h2>Découvrez les dernières réalisations</h2>
+
+                <article></article>
+                <article></article>
+            </article>
         </main>
     )
 }
