@@ -1,10 +1,11 @@
+import Gallery from "@/components/home/gallery"
 import GridCard from "@/components/home/grid-card"
 import ScrollProject from "@/components/home/scroll-project"
 import Button from "@/components/ui/buttonv2"
 import Link from "@/components/ui/link"
+import { PROJECT } from "@/constants/projects"
 import Header from "@/public/header.png"
 import Image from "next/image"
-import { PROJECT } from "@/constants/projects"
 
 export default function Home() {
     const projects = [PROJECT]
@@ -81,12 +82,7 @@ export default function Home() {
                     {children}
                 </ScrollProject>
             ))}
-            <article>
-                <h2>Découvrez les dernières réalisations</h2>
-
-                <article></article>
-                <article></article>
-            </article>
+            <Gallery />
         </main>
     )
 }
