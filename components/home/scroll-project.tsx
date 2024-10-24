@@ -1,9 +1,5 @@
 "use client"
 
-import { useGSAP } from "@gsap/react"
-import gsap from "gsap"
-import Image from "next/image"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
 import {
     IMAGE_END_ANGLE,
     IMAGE_END_X,
@@ -13,25 +9,29 @@ import {
     SHOW_MARKERS,
     TOGGLE_ACTIONS,
 } from "@/constants/gsap"
-import { cn } from "@/utils/tailwind"
 import { Project } from "@/types/project"
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import Image from "next/image"
+import { useRef } from "react"
 
 const ScrollProject = ({ leftImage, rightImage, children }: Project) => {
+    const leftRef = useRef(null)
+    const rightRef = useRef(null)
     gsap.registerPlugin(ScrollTrigger)
     const tl = gsap.timeline()
 
-    const imagesClasses = ["left", "right"]
-
     useGSAP(() => {
-        tl.from(`.${imagesClasses[0]}`, {
+        tl.from(leftRef.current, {
             rotation: IMAGE_START_ANGLE,
             x: IMAGE_START_X,
-        }).to(`.${imagesClasses[0]}`, {
+        }).to(leftRef.current, {
             rotation: IMAGE_END_ANGLE,
             x: `-${IMAGE_END_X}`,
             scrollTrigger: {
                 toggleActions: TOGGLE_ACTIONS,
-                trigger: `.${imagesClasses[0]}`,
+                trigger: leftRef.current,
                 start: "top 80%",
                 end: "bottom bottom",
                 scrub: SCRUB,
@@ -39,15 +39,15 @@ const ScrollProject = ({ leftImage, rightImage, children }: Project) => {
             },
         })
 
-        tl.from(`.${imagesClasses[1]}`, {
+        tl.from(rightRef.current, {
             rotation: -IMAGE_START_ANGLE,
             x: `-${IMAGE_START_X}`,
-        }).to(`.${imagesClasses[1]}`, {
+        }).to(rightRef.current, {
             rotation: -IMAGE_END_ANGLE,
             x: IMAGE_END_X,
             scrollTrigger: {
                 toggleActions: TOGGLE_ACTIONS,
-                trigger: `.${imagesClasses[1]}`,
+                trigger: rightRef.current,
                 start: "top 80%",
                 end: "bottom bottom",
                 scrub: SCRUB,
@@ -59,10 +59,8 @@ const ScrollProject = ({ leftImage, rightImage, children }: Project) => {
     return (
         <section className="relative flex h-screen items-center justify-center gap-4 overflow-hidden p-24">
             <article
-                className={cn(
-                    imagesClasses[0],
-                    "z-20 h-full min-w-[600px] overflow-hidden"
-                )}
+                ref={leftRef}
+                className="z-20 h-full min-w-[600px] overflow-hidden"
             >
                 <Image
                     priority={false}
@@ -74,10 +72,8 @@ const ScrollProject = ({ leftImage, rightImage, children }: Project) => {
             {children}
 
             <article
-                className={cn(
-                    imagesClasses[1],
-                    "z-20 h-full min-w-[600px] overflow-hidden"
-                )}
+                ref={rightRef}
+                className="z-20 h-full min-w-[600px] overflow-hidden"
             >
                 <Image
                     priority={false}

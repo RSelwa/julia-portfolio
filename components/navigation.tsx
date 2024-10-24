@@ -5,7 +5,7 @@ const Navigation = () => (
     <nav className="flex items-center justify-around bg-primary-900 px-6 py-2">
         <section className="flex flex-1 items-center gap-2">
             <Link href="/">Services</Link>
-            <Link href="/">Projets</Link>
+            <Link href="/projects">Projets</Link>
             <Link href="/">Qui suis-je ?</Link>
         </section>
         <NextLink
