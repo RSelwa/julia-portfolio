@@ -1,8 +1,10 @@
+import Footer from "@/components/footer"
 import Gallery from "@/components/home/gallery"
 import GridCard from "@/components/home/grid-card"
 import ScrollProject from "@/components/home/scroll-project"
 import Button from "@/components/ui/buttonv2"
 import Link from "@/components/ui/link"
+import { JULIA_EMAIL } from "@/constants"
 import { PROJECT } from "@/constants/projects"
 import Header from "@/public/header.png"
 import Image from "next/image"
@@ -83,6 +85,16 @@ export default function Home() {
                 </ScrollProject>
             ))}
             <Gallery />
+            <section className="mx-auto flex w-fit flex-col items-center gap-10 rounded-2xl bg-primary-600 px-44 py-12">
+                <h3 className="text-4xl font-light">
+                    Prêt(e) à donner vie à votre projet ?
+                </h3>
+                <Button variant="white-filled" size="lg" className="font-light">
+                    Contacter le studio
+                </Button>
+            </section>
+            <button>{JULIA_EMAIL}</button>
+            <Footer />
         </main>
     )
 }
