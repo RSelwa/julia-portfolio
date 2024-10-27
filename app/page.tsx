@@ -4,7 +4,6 @@ import GridCard from "@/components/home/grid-card"
 import ScrollProject from "@/components/home/scroll-project"
 import Button from "@/components/ui/buttonv2"
 import Link from "@/components/ui/link"
-import { JULIA_EMAIL } from "@/constants"
 import { PROJECT } from "@/constants/projects"
 import Header from "@/public/header.png"
 import Image from "next/image"
@@ -93,7 +92,6 @@ export default function Home() {
                     Contacter le studio
                 </Button>
             </section>
-            <button>{JULIA_EMAIL}</button>
             <Footer />
         </main>
     )

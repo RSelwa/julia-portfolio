@@ -1,6 +1,6 @@
 import { cva, VariantProps } from "class-variance-authority"
 
-export const buttonStyle = cva("", {
+export const buttonStyle = cva("transition-colors", {
     variants: {
         variant: {
             "white-filled": "bg-white text-neutral-900 border-white border",
