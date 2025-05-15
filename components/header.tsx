@@ -1,32 +1,29 @@
 "use client"
 
-import { useTheme } from "next-themes"
-import React from "react"
+import { useState } from "react"
 
 const Header = () => {
-  const { setTheme } = useTheme()
-
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="flex justify-between items-center p-4 bg-stone-200 text-black dark:bg-black dark:text-yellow-400
-    ">
-      <button>( menu )</button>
-      <button>LaSource</button>
-      <button>( close )</button>
+    <>
+      <nav className="sticky z-20 top-0 flex justify-between text-cobalt items-center p-4 bg-stone-200  dark:bg-black dark:text-yellow-400">
+        <button onClick={() => setIsOpen((prev) => !prev)}>
+          ( {isOpen ? "close" : "menu"} )
+        </button>
 
-      <button onClick={()=>{
-        console.log("light");
-        
-        setTheme("light")}}>Light</button>
-      <button onClick={()=>{
-        console.log("dark");
-        
-        setTheme("dark")}}>DARK</button>
-      <button onClick={()=>{
-        console.log("system");
-        
-        setTheme("system")}}>SYSTEM</button>
-    </nav>
+        <button>LaSource</button>
+        <button>( close )</button>
+      </nav>
+      {isOpen && (
+        <ul className="sticky z-10 h-svh pt-44 top-0 bg-cobalt text-white font-semibold">
+          <li>Home</li>
+          <li>About us</li>
+          <li>Work</li>
+          <li>Contact</li>
+        </ul>
+      )}
+    </>
   )
 }
 

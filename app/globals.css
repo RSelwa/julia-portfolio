@@ -2,10 +2,17 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@font-face {
+  font-family: 'Roslindale';
+  src: url('/fonts/RoslindaleVariable-VF-Testing') format('trueType');
+  font-weight: 100 900;
+  font-display: swap;
+}
 
 @theme {
   --color-cobalt: #0c3ef2;
   --color-stone-200: #e7e4e5;
   --color-black: #030303;
   --color-yellow-400: #dff20c;
+  --font-serif: "Roslindale";
 }
