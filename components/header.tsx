@@ -7,22 +7,26 @@ const Header = () => {
 
   return (
     <>
-      <nav className="sticky z-20 top-0 flex justify-between text-cobalt items-center p-4 bg-stone-200  dark:bg-black dark:text-yellow-400">
-        <button onClick={() => setIsOpen((prev) => !prev)}>
-          ( {isOpen ? "close" : "menu"} )
-        </button>
-
-        <button>LaSource</button>
-        <button>( close )</button>
-      </nav>
+      {/* Full-Screen Menu */}
       {isOpen && (
-        <ul className="sticky z-10 h-svh pt-44 top-0 bg-cobalt text-white font-semibold">
-          <li>Home</li>
-          <li>About us</li>
-          <li>Work</li>
-          <li>Contact</li>
-        </ul>
+        <div className="fixed inset-0 z-10 bg-cobalt text-white font-semibold flex flex-col items-center justify-center">
+          <ul className="space-y-6 text-2xl">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Work</li>
+            <li>Contact</li>
+          </ul>
+        </div>
       )}
+
+      {/* Navbar */}
+      <div className="sticky top-0 z-20 dark:bg-black">
+        <nav className="flex justify-between items-center p-4 text-red-500 dark:text-yellow-400">
+          <button onClick={() => setIsOpen((p) => !p)}>( menu )</button>
+          <span>LaSource</span>
+          <span></span>
+        </nav>
+      </div>
     </>
   )
 }

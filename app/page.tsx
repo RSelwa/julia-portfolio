@@ -7,7 +7,8 @@ export default function Home() {
 
       <div>Selected projects (1 - 4)</div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5"></div>
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">AAA</div>
+      <div className="h-[2000px]">AA</div>
     </main>
   )
 }
