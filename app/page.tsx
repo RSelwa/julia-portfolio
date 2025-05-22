@@ -35,14 +35,18 @@ export default function Home() {
         </article>
         <ul className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
           {Array.from({ length: 4 }, (_, i) => (
-            <Image
-              key={i}
-              alt={`Project ${i + 1}`}
-              src={`/img.avif`}
-              width={86}
-              height={86}
-              className="size-[86px] object-cover"
-            />
+            <div key={i} className="group">
+              <Image
+                alt={`Project ${i + 1}`}
+                src={`/img.avif`}
+                width={86}
+                height={86}
+                className="size-[86px] object-cover"
+              />
+              <div className="fixed h-full left-0 top-0 z-20 overflow-hidden w-0 group-hover:animate-slideIn bg-red-500">
+                {"test" + i}
+              </div>
+            </div>
           ))}
         </ul>
       </section>

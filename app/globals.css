@@ -4,8 +4,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
-  font-family: 'Roslindale';
-  src: url('/fonts/RoslindaleVariable-VF-Testing') format('trueType');
+  font-family: "Roslindale";
+  src: url("/fonts/RoslindaleVariable-VF-Testing") format("trueType");
   font-weight: 100 900;
   font-display: swap;
 }
@@ -16,6 +16,18 @@
   --color-black: #030303;
   --color-yellow-400: #dff20c;
   --font-serif: "Roslindale";
+
+  --animate-slideIn: slideIn 0.5s normal forwards;
+  --animate-slideOut: slideIn 0.5s reverse forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 33%;
+  }
 }
 
 @theme inline {
