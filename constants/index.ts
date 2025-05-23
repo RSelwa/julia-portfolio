@@ -3,6 +3,9 @@ export const PROJECTS_TYPE = {
   SELECTED: "selected"
 } as const
 
+export const TRANSITION_DURATION = 500
+export const TRANSITION_CLASSNAME = "page-transition"
+
 export const projects = [
   {
     date: new Date("2023-01-01"),
