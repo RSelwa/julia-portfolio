@@ -151,5 +151,5 @@ body {
 }
 
 .page-transition {
-  @apply -translate-y-10 bg-black opacity-0 blur-md;
+  @apply bg-cobalt -translate-y-10 opacity-0 blur-md;
 }

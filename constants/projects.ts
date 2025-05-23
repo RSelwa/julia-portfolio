@@ -5,7 +5,10 @@ export const LSI: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: ""
+  link: "",
+  images: {
+    cover: "/lsi/cover.png"
+  }
 }
 
 export const SPOT_LUMIERE_LED: Project = {
@@ -13,7 +16,10 @@ export const SPOT_LUMIERE_LED: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: ""
+  link: "",
+  images: {
+    cover: "/img.avif"
+  }
 }
 
 export const RALF_TECH: Project = {
@@ -21,7 +27,10 @@ export const RALF_TECH: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: ""
+  link: "",
+  images: {
+    cover: "/img.avif"
+  }
 }
 
 export const EUROCAPA: Project = {
@@ -29,7 +38,10 @@ export const EUROCAPA: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: ""
+  link: "",
+  images: {
+    cover: "/img.avif"
+  }
 }
 
 export const MADIME: Project = {
@@ -37,7 +49,10 @@ export const MADIME: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: ""
+  link: "",
+  images: {
+    cover: "/img.avif"
+  }
 }
 
 export const ECOLE: Project = {
@@ -45,7 +60,10 @@ export const ECOLE: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: ""
+  link: "",
+  images: {
+    cover: "/img.avif"
+  }
 }
 
 export const UNITED_STRAP: Project = {
@@ -53,7 +71,10 @@ export const UNITED_STRAP: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: ""
+  link: "",
+  images: {
+    cover: "/img.avif"
+  }
 }
 
 export const MAINE_COCOONE: Project = {
@@ -61,7 +82,10 @@ export const MAINE_COCOONE: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: ""
+  link: "",
+  images: {
+    cover: "/img.avif"
+  }
 }
 
 export const LIVING_FRENCH_RIVIERA: Project = {
@@ -69,7 +93,10 @@ export const LIVING_FRENCH_RIVIERA: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: ""
+  link: "",
+  images: {
+    cover: "/img.avif"
+  }
 }
 
 export const HYDRATE_HEROES: Project = {
@@ -77,7 +104,10 @@ export const HYDRATE_HEROES: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: ""
+  link: "",
+  images: {
+    cover: "/img.avif"
+  }
 }
 
 export const SIMON_WATCHES: Project = {
@@ -85,5 +115,8 @@ export const SIMON_WATCHES: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: ""
+  link: "",
+  images: {
+    cover: "/img.avif"
+  }
 }

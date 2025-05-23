@@ -38,7 +38,7 @@ const Header = () => {
                   About us
                 </TransitionLink>
               </li>
-              <li {...{ callback }}>Work</li>
+              <li>Work</li>
               <li>Contact</li>
             </ul>
           </motion.div>
@@ -49,12 +49,18 @@ const Header = () => {
       <div className="sticky top-0 z-20 dark:bg-black">
         <nav
           data-status={isOpen ? "open" : "closed"}
-          className="flex justify-between items-center transition-colors duration-500 p-4 data-[status=closed]:text-cobalt data-[status=open]:text-stone-200 dark:text-yellow-400"
+          className="flex justify-between items-center transition-colors duration-500 p-4 data-[status=closed]:text-cobalt bg-white data-[status=open]:bg-transparent data-[status=open]:text-stone-200 dark:text-yellow-400"
         >
           <button onClick={() => setIsOpen((p) => !p)}>
             ( {isOpen ? "close" : "menu"} )
           </button>
-          <span className="font-serif font-bold text-2xl">LaSource</span>
+          <TransitionLink
+            {...{ callback }}
+            href="/"
+            className="font-serif font-bold text-2xl"
+          >
+            LaSource
+          </TransitionLink>
           <span>( work )</span>
         </nav>
       </div>

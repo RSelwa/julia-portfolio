@@ -1,8 +1,15 @@
 import GridElement from "@/components/grid-element"
-import { projects } from "@/constants"
+import { PROJECTS, projects } from "@/constants"
 import Image from "next/image"
 
 export default function Home() {
+  const projectsA = [
+    PROJECTS.LSI,
+    PROJECTS.EUROCAPA,
+    PROJECTS.MADIME,
+    PROJECTS.ECOLE
+  ]
+
   return (
     <main className="text-center px-10">
       <section className="font-serif text-center text-cobalt">
@@ -30,24 +37,27 @@ export default function Home() {
         où <AspectRatio /> tout a commencé
       </div> */}
 
-      <section className="lg:w-1/2 ml-auto mt-40">
-        <article className=" flex justify-between items-center">
-          <div className="lg:ml-[-110px]">Selected projects</div>{" "}
+      <section className="ml-auto mt-40 flex flex-col items-end">
+        <article className="flex justify-between items-center gap-20 lg:gap-96">
+          <div>Selected projects</div>{" "}
           <div>
             (1 <span className="mx-8">-</span> 4)
           </div>
         </article>
-        <ul className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
-          {Array.from({ length: 4 }, (_, i) => (
+        <ul className="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-8">
+          {projectsA.map(({ images: { cover } }, i) => (
             <div key={i} className="group size-[86px]">
               <Image
                 alt={`Project ${i + 1}`}
-                src={`/img.avif`}
+                src={cover}
                 width={86}
                 height={86}
                 className="size-[86px] object-cover"
               />
-              <div className="fixed h-full left-0 top-0 z-20 overflow-hidden w-0 group-hover:animate-slideIn bg-red-500">
+              <div
+                style={{ backgroundImage: `url(${cover})` }}
+                className="fixed h-full left-0 top-0 z-20 overflow-hidden w-0 group-hover:animate-slideIn bg-center bg-cover"
+              >
                 {"test" + i}
               </div>
             </div>

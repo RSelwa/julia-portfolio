@@ -1,4 +1,6 @@
+import Footer from "@/components/footer"
 import Header from "@/components/header"
+import StartAnimation from "@/components/start-animation"
 import { ThemeProvider } from "@/components/theme-provider"
 import type { Metadata } from "next"
 import "./globals.css"
@@ -22,8 +24,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <StartAnimation />
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
