@@ -15,13 +15,13 @@ const Header = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            animate={{ height: "100vh" }}
             initial={{ height: 0 }}
+            animate={{ height: "100vh" }}
             exit={{ height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-10 bg-cobalt text-white font-semibold flex flex-col items-center justify-center"
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="fixed inset-0 z-10 bg-cobalt overflow-hidden text-white font-semibold flex flex-col items-center justify-center"
           >
-            <ul className="space-y-6 text-2xl text-center">
+            <ul className="space-y-6 text-2xl text-center animate-[fadeIn_0.5s_ease-in-out]">
               <li>
                 <TransitionLink {...{ callback }} href="/test">
                   TEST

@@ -1,3 +1,17 @@
+import {
+  ECOLE,
+  EUROCAPA,
+  HYDRATE_HEROES,
+  LIVING_FRENCH_RIVIERA,
+  LSI,
+  MADIME,
+  MAINE_COCOONE,
+  RALF_TECH,
+  SIMON_WATCHES,
+  SPOT_LUMIERE_LED,
+  UNITED_STRAP
+} from "@/constants/projects"
+
 export const PROJECTS_TYPE = {
   NEWS: "news",
   SELECTED: "selected"
@@ -5,6 +19,22 @@ export const PROJECTS_TYPE = {
 
 export const TRANSITION_DURATION = 500
 export const TRANSITION_CLASSNAME = "page-transition"
+
+export const PROJECTS = {
+  LSI,
+  SPOT_LUMIERE_LED,
+  ECOLE,
+  EUROCAPA,
+  MADIME,
+  RALF_TECH,
+  UNITED_STRAP,
+  MAINE_COCOONE,
+  LIVING_FRENCH_RIVIERA,
+  HYDRATE_HEROES,
+  SIMON_WATCHES
+} as const
+
+// 11
 
 export const projects = [
   {

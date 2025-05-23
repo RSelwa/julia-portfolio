@@ -6,8 +6,12 @@ export default function Home() {
   return (
     <main className="text-center px-10">
       <section className="font-serif text-center text-cobalt">
-        <h1 className="mt-40 text-4xl font-bold">La source de Julia Caro</h1>
-        <h2>Freelance - communication digitale - direction artistique </h2>
+        <h1 className="mt-40 text-7xl font-bold w-5/6 mx-auto">
+          La source de Julia Caro
+        </h1>
+        <h2 className="text-2xl">
+          Freelance - communication digitale - direction artistique{" "}
+        </h2>
       </section>
 
       {/* <div>
@@ -26,7 +30,7 @@ export default function Home() {
         où <AspectRatio /> tout a commencé
       </div> */}
 
-      <section className="lg:w-1/2 ml-auto">
+      <section className="lg:w-1/2 ml-auto mt-40">
         <article className=" flex justify-between items-center">
           <div className="lg:ml-[-110px]">Selected projects</div>{" "}
           <div>
@@ -35,7 +39,7 @@ export default function Home() {
         </article>
         <ul className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
           {Array.from({ length: 4 }, (_, i) => (
-            <div key={i} className="group">
+            <div key={i} className="group size-[86px]">
               <Image
                 alt={`Project ${i + 1}`}
                 src={`/img.avif`}
@@ -51,7 +55,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="min-h-[1000px]">
+      <section className="min-h-[1000px] mt-40">
         <ul className="grid grid-cols-1 lg:grid-cols-12 gap-5">
           <GridElement project={projects[0]} className="lg:col-span-4" />
           <GridElement
