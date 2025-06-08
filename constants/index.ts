@@ -1,11 +1,11 @@
+import { ProjectGrid } from "@/components/grid-element"
 import {
+  DETOURS,
   ECOLE,
-  EUROCAPA,
-  HYDRATE_HEROES,
-  LIVING_FRENCH_RIVIERA,
+  LGI,
+  LOU_ET_ROSE,
   LSI,
   MADIME,
-  MAINE_COCOONE,
   RALF_TECH,
   SIMON_WATCHES,
   SPOT_LUMIERE_LED,
@@ -17,60 +17,58 @@ export const PROJECTS_TYPE = {
   SELECTED: "selected"
 } as const
 
+export const CONTACT_EMAIL = "julia.caro30pro30@gmail.com"
 export const TRANSITION_DURATION = 500
 export const TRANSITION_CLASSNAME = "page-transition"
 
 export const PROJECTS = {
-  LSI,
-  SPOT_LUMIERE_LED,
-  ECOLE,
-  EUROCAPA,
-  MADIME,
-  RALF_TECH,
-  UNITED_STRAP,
-  MAINE_COCOONE,
-  LIVING_FRENCH_RIVIERA,
-  HYDRATE_HEROES,
-  SIMON_WATCHES
+  LSI, //? tier1
+  SPOT_LUMIERE_LED, //? tier1
+  DETOURS, //? tier1
+  RALF_TECH, //? tier1
+  MADIME, //# tier2
+  SIMON_WATCHES, //# tier2
+  LGI, //# tier2
+  ECOLE, //! tier3
+  UNITED_STRAP, //! tier3
+  LOU_ET_ROSE //! tier3
 } as const
 
 // 11
 
-export const projects = [
+export const selectedProjects = Object.values(PROJECTS).filter(
+  (project) => project.tier === "1"
+)
+
+export const projects: ProjectGrid[] = [
   {
-    date: new Date("2023-01-01"),
-    title: "Why is packaging important?",
+    ...LSI,
     type: PROJECTS_TYPE.NEWS,
-    img: "/img.avif"
+    img: LSI.images.cover
   },
   {
-    date: new Date("2023-01-01"),
-    title: "Future Focus Vol 1: Photographer Alice Hutchison",
+    ...SPOT_LUMIERE_LED,
     type: PROJECTS_TYPE.SELECTED,
-    img: "/img.avif"
+    img: SPOT_LUMIERE_LED.images.cover
   },
   {
-    date: new Date("2023-01-01"),
-    title: "Can Giving Away Ideas For Free Be Valuable?",
+    ...DETOURS,
     type: PROJECTS_TYPE.NEWS,
-    img: "/img.avif"
+    img: DETOURS.images.cover
   },
   {
-    date: new Date("2023-01-01"),
-    title: "The Azurial Picks Up Silver At FAB",
+    ...RALF_TECH,
     type: PROJECTS_TYPE.NEWS,
-    img: "/img.avif"
+    img: RALF_TECH.images.cover
   },
   {
-    date: new Date("2023-01-01"),
-    title: "Why is packaging important?",
+    ...SIMON_WATCHES,
     type: PROJECTS_TYPE.SELECTED,
-    img: "/img.avif"
+    img: SIMON_WATCHES.images.cover
   },
   {
-    date: new Date("2023-01-01"),
-    title: "The Azurial Picks Up Silver At FAB",
+    ...MADIME,
     type: PROJECTS_TYPE.SELECTED,
-    img: "/img.avif"
+    img: MADIME.images.cover
   }
 ]

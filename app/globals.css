@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Roslindale";
-  src: url("/fonts/RoslindaleVariable-VF-Testing") format("trueType");
+  src: url("/fonts/RoslindaleVariable.ttf") format("truetype");
   font-weight: 100 900;
   font-display: swap;
 }
@@ -17,8 +17,18 @@
   --color-yellow-400: #dff20c;
   --font-serif: "Roslindale";
 
+  --text-size-h1: clamp(5rem, -0.0556rem + 11.5556vi, 11.5rem);
+  --text-size-h2: clamp(2rem, 1.0278rem + 2.2222vi, 3.25rem);
+  --text-size-h3: clamp(1.375rem, 1.0833rem + 0.6667vi, 1.75rem);
+  --text-size-p1: clamp(1rem, 0.9028rem + 0.2222vi, 1.125rem);
+  --text-size-p2: clamp(0.75rem, 0.1667rem + 1.3333vi, 1.5rem);
+
   --animate-slideIn: slideIn 0.5s normal forwards;
   --animate-slideOut: slideIn 0.5s reverse forwards;
+  --animate-widthIn: widthIn 5s normal forwards;
+
+  --spacing-full-height: calc(100svh - var(--nav-height));
+  --spacing-110: 1.1em;
 }
 
 @keyframes slideIn {
@@ -27,6 +37,15 @@
   }
   100% {
     width: 33%;
+  }
+}
+
+@keyframes widthIn {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 200px;
   }
 }
 
@@ -69,6 +88,7 @@
 }
 
 :root {
+  --nav-height: 64px;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

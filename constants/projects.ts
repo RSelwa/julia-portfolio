@@ -1,18 +1,22 @@
 import { Project } from "@/types"
 
 export const LSI: Project = {
-  name: "LSI",
+  id: "lsi",
+  tier: "1",
+  title: "LSI",
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "",
+  link: "https://lessecretsdelimmo.fr/",
   images: {
     cover: "/lsi/cover.png"
   }
 }
 
 export const SPOT_LUMIERE_LED: Project = {
-  name: "Sport Lumière LED",
+  tier: "1",
+  id: "spot-lumiere-led",
+  title: "Sport Lumière LED",
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -23,18 +27,9 @@ export const SPOT_LUMIERE_LED: Project = {
 }
 
 export const RALF_TECH: Project = {
-  name: "Ralf Tech",
-  date: new Date("2023-01-01"),
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "",
-  images: {
-    cover: "/img.avif"
-  }
-}
-
-export const EUROCAPA: Project = {
-  name: "Eurocapa",
+  id: "ralf-tech",
+  tier: "1",
+  title: "Ralf Tech",
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -45,7 +40,10 @@ export const EUROCAPA: Project = {
 }
 
 export const MADIME: Project = {
-  name: "Madime",
+  id: "madime",
+  tier: "2",
+
+  title: "Madime",
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -56,7 +54,9 @@ export const MADIME: Project = {
 }
 
 export const ECOLE: Project = {
-  name: "Ecole",
+  id: "ecole",
+  tier: "3",
+  title: "Ecole",
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -67,7 +67,10 @@ export const ECOLE: Project = {
 }
 
 export const UNITED_STRAP: Project = {
-  name: "United Strap",
+  id: "united-strap",
+  tier: "3",
+
+  title: "United Strap",
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -77,8 +80,11 @@ export const UNITED_STRAP: Project = {
   }
 }
 
-export const MAINE_COCOONE: Project = {
-  name: "United Strap",
+export const LOU_ET_ROSE: Project = {
+  id: "lou-et-rose",
+  tier: "3",
+
+  title: "LOU_ET_ROSE",
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -88,19 +94,11 @@ export const MAINE_COCOONE: Project = {
   }
 }
 
-export const LIVING_FRENCH_RIVIERA: Project = {
-  name: "United Strap",
-  date: new Date("2023-01-01"),
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "",
-  images: {
-    cover: "/img.avif"
-  }
-}
+export const LGI: Project = {
+  id: "lgi",
+  tier: "2",
 
-export const HYDRATE_HEROES: Project = {
-  name: "United Strap",
+  title: "LGI",
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -111,7 +109,24 @@ export const HYDRATE_HEROES: Project = {
 }
 
 export const SIMON_WATCHES: Project = {
-  name: "United Strap",
+  id: "simon-watches",
+  tier: "2",
+
+  title: "United Strap",
+  date: new Date("2023-01-01"),
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  link: "",
+  images: {
+    cover: "/img.avif"
+  }
+}
+
+export const DETOURS: Project = {
+  id: "detours",
+  tier: "1",
+
+  title: "Detours",
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
