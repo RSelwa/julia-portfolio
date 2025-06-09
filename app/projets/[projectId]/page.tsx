@@ -41,10 +41,14 @@ const Page = async ({ params }: { params: Promise<{ projectId: string }> }) => {
           <h2 className="font-serif text-2xl font-semibold">Compétences</h2>
           <p>{project.skills?.map((skill, i) => <div key={i}>{skill}</div>)}</p>
         </article>
-        <article className="flex flex-col gap-5">
-          <h2 className="font-serif text-2xl font-semibold">liens</h2>
-          <p>{project.link}</p>
-        </article>
+        {project.link && (
+          <article className="flex flex-col gap-5">
+            <h2 className="font-serif text-2xl font-semibold">Liens</h2>
+            <a href={project.link.url} target="_blank">
+              {project.link.label}
+            </a>
+          </article>
+        )}
       </section>
       <Image
         src={project.images.cover}

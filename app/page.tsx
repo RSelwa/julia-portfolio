@@ -10,16 +10,20 @@ export default function Home() {
   return (
     <main className="px-10 text-center">
       <section className="text-cobalt text-center font-serif">
-        <h1 className="mx-auto mt-40 w-5/6 text-7xl font-bold">
-          La source de Julia Caro
+        <h1 className="lg:text-size-h1 text-size-h2 mx-auto mt-24 w-5/6 leading-110 font-semibold uppercase">
+          La
+          <span className="ml-4 font-mono uppercase">S</span>
+          ource
+          <br />
+          Studio
         </h1>
-        <h2 className="text-2xl">
+        <h2 className="mt-12 text-2xl lg:mt-0">
           Freelance - communication digitale - direction artistique
         </h2>
       </section>
 
       <section className="my-20 space-y-20 font-serif">
-        <p className="mx-auto flex w-2/3 flex-wrap items-center justify-center gap-4 text-center text-8xl">
+        <p className="text-size-h2 mx-auto flex w-2/3 flex-wrap items-center justify-center gap-4 text-center lg:text-8xl">
           L'endroit
           <Image
             alt="La source"

@@ -6,9 +6,10 @@ export type Project = {
   date: Date
   title: string
   description: string
-  link: string
-  skills?: string[]
-  logiciels?: string[]
+  link?: { url: string; label: string }
+  skills: string[]
+  logiciels: string[]
+  footerDescription: string
   images: {
     cover: ImgUrl
   }

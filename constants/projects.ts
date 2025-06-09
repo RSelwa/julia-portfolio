@@ -8,7 +8,8 @@ export const LSI: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "https://lessecretsdelimmo.fr/",
+  footerDescription: "",
+  link: { url: "https://lessecretsdelimmo.fr/", label: "Voir le site" },
   skills: [
     COMPETENCES.GRAPHISME,
     COMPETENCES.ILLUSTRATION,
@@ -16,7 +17,6 @@ export const LSI: Project = {
   ],
   logiciels: [LOGICIELS.ILLUSTRATOR, LOGICIELS.PHOTOSHOP],
   images: {
-    // cover: "/lsi/cover.png"
     cover: "/img.avif"
   }
 }
@@ -26,12 +26,16 @@ export const SPOT_LUMIERE_LED: Project = {
   id: "spot-lumiere-led",
   title: "Sport Lumière LED",
   date: new Date("2023-01-01"),
+
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "",
+  link: { url: "https://lessecretsdelimmo.fr/", label: "Voir le site" },
   images: {
     cover: "/img.avif"
-  }
+  },
+  skills: [],
+  logiciels: [],
+  footerDescription: ""
 }
 
 export const RALF_TECH: Project = {
@@ -41,10 +45,13 @@ export const RALF_TECH: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "",
+  link: { url: "https://lessecretsdelimmo.fr/", label: "Voir le site" },
   images: {
     cover: "/img.avif"
-  }
+  },
+  skills: [],
+  logiciels: [],
+  footerDescription: ""
 }
 
 export const MADIME: Project = {
@@ -55,10 +62,13 @@ export const MADIME: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "",
+  link: { url: "https://lessecretsdelimmo.fr/", label: "Voir le site" },
   images: {
     cover: "/img.avif"
-  }
+  },
+  skills: [],
+  logiciels: [],
+  footerDescription: ""
 }
 
 export const ECOLE: Project = {
@@ -68,10 +78,13 @@ export const ECOLE: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "",
+  link: { url: "https://lessecretsdelimmo.fr/", label: "Voir le site" },
   images: {
     cover: "/img.avif"
-  }
+  },
+  skills: [],
+  logiciels: [],
+  footerDescription: ""
 }
 
 export const UNITED_STRAP: Project = {
@@ -82,10 +95,13 @@ export const UNITED_STRAP: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "",
+  link: { url: "https://lessecretsdelimmo.fr/", label: "Voir le site" },
   images: {
     cover: "/img.avif"
-  }
+  },
+  skills: [],
+  logiciels: [],
+  footerDescription: ""
 }
 
 export const LOU_ET_ROSE: Project = {
@@ -96,10 +112,13 @@ export const LOU_ET_ROSE: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "",
+  link: { url: "https://lessecretsdelimmo.fr/", label: "Voir le site" },
   images: {
     cover: "/img.avif"
-  }
+  },
+  skills: [],
+  logiciels: [],
+  footerDescription: ""
 }
 
 export const LGI: Project = {
@@ -110,10 +129,13 @@ export const LGI: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "",
+  link: { url: "https://lessecretsdelimmo.fr/", label: "Voir le site" },
   images: {
     cover: "/img.avif"
-  }
+  },
+  skills: [],
+  logiciels: [],
+  footerDescription: ""
 }
 
 export const SIMON_WATCHES: Project = {
@@ -124,10 +146,13 @@ export const SIMON_WATCHES: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "",
+  link: { url: "https://lessecretsdelimmo.fr/", label: "Voir le site" },
   images: {
     cover: "/img.avif"
-  }
+  },
+  skills: [],
+  logiciels: [],
+  footerDescription: ""
 }
 
 export const DETOURS: Project = {
@@ -138,8 +163,11 @@ export const DETOURS: Project = {
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  link: "",
+  link: { url: "https://lessecretsdelimmo.fr/", label: "Voir le site" },
   images: {
     cover: "/img.avif"
-  }
+  },
+  skills: [],
+  logiciels: [],
+  footerDescription: ""
 }

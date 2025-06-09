@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import TransitionLink from "@/components/transition-link"
-import { cn, formatDate } from "@/lib/utils"
+import { cn } from "@/lib/utils"
 import { Project } from "@/types"
 import { ComponentProps } from "react"
 
@@ -24,12 +24,13 @@ const GridElement = ({
         <img
           src={project.images.cover}
           alt={project.title}
-          className="aspect-[0.73/1] h-[calc(100%+75px)] bg-red-600 object-cover"
+          className="aspect-[0.73/1] h-[calc(100%+75px)] object-cover"
         />
       </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-between bg-black/60 py-2">
-        <p>{formatDate(project.date)}</p>
-        <p>{project.title}</p>
+      <div className="absolute inset-0 flex flex-col items-center justify-between bg-black/60 font-serif">
+        <p className="w-full bg-gradient-to-b from-black/50 to-transparent py-4 text-center">
+          ( {project.title} )
+        </p>
       </div>
     </TransitionLink>
   )
