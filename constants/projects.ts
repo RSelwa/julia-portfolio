@@ -1,3 +1,4 @@
+import { COMPETENCES, LOGICIELS } from "@/constants/competences"
 import { Project } from "@/types"
 
 export const LSI: Project = {
@@ -8,8 +9,15 @@ export const LSI: Project = {
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   link: "https://lessecretsdelimmo.fr/",
+  skills: [
+    COMPETENCES.GRAPHISME,
+    COMPETENCES.ILLUSTRATION,
+    COMPETENCES.MOTION_DESIGN
+  ],
+  logiciels: [LOGICIELS.ILLUSTRATOR, LOGICIELS.PHOTOSHOP],
   images: {
-    cover: "/lsi/cover.png"
+    // cover: "/lsi/cover.png"
+    cover: "/img.avif"
   }
 }
 
@@ -112,7 +120,7 @@ export const SIMON_WATCHES: Project = {
   id: "simon-watches",
   tier: "2",
 
-  title: "United Strap",
+  title: "Simon watches",
   date: new Date("2023-01-01"),
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",

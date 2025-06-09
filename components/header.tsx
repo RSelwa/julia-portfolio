@@ -49,7 +49,7 @@ const Header = () => {
         <TransitionLink
           {...{ callback }}
           href="/"
-          className="flex font-serif font-bold text-2xl "
+          className="text-cobalt flex font-serif text-2xl font-bold"
         >
           LaSource
         </TransitionLink>
@@ -60,7 +60,7 @@ const Header = () => {
             key={link.url}
             href={link.url}
             data-state={pathname === link.url && "active"}
-            className="text-cobalt bg-beige data-[state=active]:bg-cobalt hover:bg-cobalt data-[state=active]:text-white hover:text-white  dark:text-cobalt rounded-sm px-5 py-1.5 uppercase transition-all hover:rounded-full data-[state=active]:rounded-full "
+            className="text-cobalt bg-beige data-[state=active]:bg-cobalt hover:bg-cobalt dark:text-cobalt rounded-sm px-5 py-1.5 uppercase transition-all hover:rounded-full hover:text-white data-[state=active]:rounded-full data-[state=active]:text-white"
           >
             {link.label}
           </TransitionLink>
@@ -70,9 +70,9 @@ const Header = () => {
       <div className="hidden min-w-fit flex-1 justify-end lg:flex">
         <TransitionLink
           href={LINKS.call.url}
-          className="bg-beige text-cobalt dark:bg-background dark:text-cobalt dark:border-cobalt/25 lg:flex hidden items-center rounded p-2 text-sm font-light uppercase dark:border"
+          className="bg-beige text-cobalt dark:bg-background dark:text-cobalt dark:border-cobalt/25 hidden items-center rounded p-2 text-sm font-light uppercase lg:flex dark:border"
         >
-          <span className="bg-cobalt text-background font-serif mx-2 flex aspect-square size-6 items-center justify-center rounded-sm">
+          <span className="bg-cobalt text-background mx-2 flex aspect-square size-6 items-center justify-center rounded-sm font-serif">
             B
           </span>
           pour prendre rdv
@@ -83,7 +83,7 @@ const Header = () => {
         <DrawerTrigger className="block lg:hidden">
           <Menu />
         </DrawerTrigger>
-        <DrawerContent className="bg-cobalt text-white  mx-auto w-[calc(100%-2.25rem)]">
+        <DrawerContent className="mx-auto w-[calc(100%-2.25rem)] bg-white text-white">
           <VisuallyHidden>
             <DrawerTitle />
             <DrawerDescription />
@@ -96,7 +96,7 @@ const Header = () => {
                 href={link.url}
                 data-state={pathname === link.url && "active"}
                 onClick={() => setIsOpen(false)}
-                className="text-foreground bg-background data-[state=active]:bg-foreground hover:bg-foreground data-[state=active]:text-background hover:text-background dark:bg-background dark:text-foreground dark:border-foreground/25 mx-auto w-52 rounded-sm px-5 py-1.5 text-center uppercase transition-all hover:rounded-full data-[state=active]:rounded-full dark:border"
+                className="text-cobalt bg-background data-[state=active]:bg-cobalt hover:bg-cobalt data-[state=active]:text-background hover:text-background dark:bg-background dark:text-foreground mx-auto w-52 rounded-sm px-5 py-1.5 text-center font-semibold uppercase transition-all hover:rounded-full data-[state=active]:rounded-full dark:border"
               >
                 {link.label}
               </TransitionLink>

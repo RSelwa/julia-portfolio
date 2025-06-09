@@ -1,4 +1,3 @@
-import { ProjectGrid } from "@/components/grid-element"
 import {
   DETOURS,
   ECOLE,
@@ -34,41 +33,6 @@ export const PROJECTS = {
   LOU_ET_ROSE //! tier3
 } as const
 
-// 11
-
 export const selectedProjects = Object.values(PROJECTS).filter(
   (project) => project.tier === "1"
 )
-
-export const projects: ProjectGrid[] = [
-  {
-    ...LSI,
-    type: PROJECTS_TYPE.NEWS,
-    img: LSI.images.cover
-  },
-  {
-    ...SPOT_LUMIERE_LED,
-    type: PROJECTS_TYPE.SELECTED,
-    img: SPOT_LUMIERE_LED.images.cover
-  },
-  {
-    ...DETOURS,
-    type: PROJECTS_TYPE.NEWS,
-    img: DETOURS.images.cover
-  },
-  {
-    ...RALF_TECH,
-    type: PROJECTS_TYPE.NEWS,
-    img: RALF_TECH.images.cover
-  },
-  {
-    ...SIMON_WATCHES,
-    type: PROJECTS_TYPE.SELECTED,
-    img: SIMON_WATCHES.images.cover
-  },
-  {
-    ...MADIME,
-    type: PROJECTS_TYPE.SELECTED,
-    img: MADIME.images.cover
-  }
-]
