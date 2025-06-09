@@ -9,33 +9,5 @@
   "bracketSpacing": true,
   "bracketSameLine": false,
   "arrowParens": "always",
-  "importOrder": [
-    "^(react/(.*)$)|^(react$)",
-    "^(next/(.*)$)|^(next$)",
-    "^(react-redux/(.*)$)|^(react-redux$)",
-    "<THIRD_PARTY_MODULES>",
-    "@/types/(.*)$",
-    "@/constants",
-    "@/constants/(.*)$",
-    "@/lib/(.*)$",
-    "@/services/(.*)$",
-    "@/utils/(.*)$",
-    "@/redux/(.*)$",
-    "@/hooks/(.*)$",
-    "@/components/(.*)$",
-    "@/style/(.*)$",
-    "@/(.*)$",
-    "^[./]"
-  ],
-  "importOrderSeparation": false,
-  "importOrderSortSpecifiers": true,
-  "importOrderBuiltinModulesToTop": true,
-  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
-  "importOrderMergeDuplicateImports": true,
-  "importOrderCombineTypeAndValueImports": true,
-  "plugins": [
-    "prettier-plugin-tailwindcss",
-    "prettier-plugin-organize-imports"
-  ],
-  "pluginSearchDirs": false
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
