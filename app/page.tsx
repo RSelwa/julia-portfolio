@@ -6,14 +6,33 @@ import { LINKS } from "@/constants/navigation"
 import { formatDate } from "@/lib/utils"
 import Image from "next/image"
 
+export const metadata = {
+  title:
+    "La Source Studio – Direction artistique & communication digitale à Paris",
+  description:
+    "Studio freelance spécialisé en direction artistique, identité visuelle et communication digitale à Paris. Découvrez nos projets et notre approche créative.",
+  openGraph: {
+    title:
+      "La Source Studio – Direction artistique & communication digitale à Paris",
+    description:
+      "Studio freelance spécialisé en direction artistique, identité visuelle et communication digitale à Paris. Découvrez nos projets et notre approche créative.",
+    images: [
+      {
+        url: "/img.avif",
+        width: 1200,
+        height: 630,
+        alt: "La Source Studio – Direction artistique à Paris"
+      }
+    ]
+  }
+}
+
 export default function Home() {
   return (
     <main className="px-10 text-center">
       <section className="text-cobalt text-center font-serif">
         <h1 className="lg:text-size-h1 text-size-h2 mx-auto mt-24 w-5/6 leading-110 font-semibold uppercase">
-          La
-          <span className="ml-4 font-mono uppercase">S</span>
-          ource
+          La Source
           <br />
           Studio
         </h1>
@@ -33,14 +52,8 @@ export default function Home() {
             className="hidden h-[100px] w-0 animate-[widthIn_.425s_ease-in-out_2s_forwards] rounded object-cover lg:block"
           />
           où
-          <Image
-            alt="La source"
-            src="/img.avif"
-            width={200}
-            height={100}
-            className="hidden h-[100px] w-0 animate-[widthIn_.425s_ease-in-out_2.064s_forwards] rounded object-cover lg:block"
-          />{" "}
-          tout a commencé
+          <br />
+          <span>tout commence</span>
           <Image
             alt="La source"
             src="/img.avif"
@@ -50,11 +63,10 @@ export default function Home() {
           />
         </p>
         <p className="mx-auto text-center text-lg lg:w-2/3">
-          Je suis Julia Caro, directrice artistique originaire de l'île de La
-          Réunion. À travers mes créations visuelles, je cherche à raconter desz
-          histoires qui capturent l'essence du moment, en mêlant émotion et
-          esthétisme. Mon art est un équilibre entre simplicité et profondeur,
-          un regard personnel sur le monde qui m'entoure.
+          La Source Studio est un studio créatif indépendant spécialisé dans le
+          graphisme & le design de marque. Notre vision ? Vous aider à
+          développer votre activité par le biais d’un design stratégique et
+          original.
         </p>
 
         <TransitionLink

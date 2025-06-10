@@ -83,7 +83,7 @@ const Header = () => {
         <DrawerTrigger className="block lg:hidden">
           <Menu />
         </DrawerTrigger>
-        <DrawerContent className="mx-auto w-[calc(100%-2.25rem)] bg-white text-white">
+        <DrawerContent className="bg-beige mx-auto w-[calc(100%-2.25rem)] text-white">
           <VisuallyHidden>
             <DrawerTitle />
             <DrawerDescription />

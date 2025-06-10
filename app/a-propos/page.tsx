@@ -5,36 +5,24 @@ const Page = () => {
   return (
     <main
       id="draggable-container"
-      className="min-h-full-height max-w-[100vw] grid grid-cols-1 gap-9 overflow-hidden p-9 lg:grid-cols-3"
+      className="min-h-full-height grid max-w-[100vw] grid-cols-1 gap-9 overflow-hidden p-9 lg:grid-cols-3"
     >
       <article className="space-y-4 lg:col-span-2">
         <h1 className="text-size-h2 text-cobalt font-serif font-semibold capitalize">
           à propos
         </h1>
         <p className="my-4 text-lg">
-          Je suis développeur web basé à Paris, spécialisé dans le développement
-          front-end et back-end avec Next.js, WordPress, et SEO.
-          <br />
-          Après avoir passé 3 ans au sein de la startup FLIM, j’ai eu l’occasion
-          de travailler sur une multitude de projets innovants. Ce fut un
-          terrain de jeu idéal pour affiner mes compétences en développement,
-          gérer des projets de A à Z, et surtout, collaborer avec des équipes
-          multidisciplinaires pour livrer des produits tech de qualité.
-          <br />
-          Mon rôle m’a permis de toucher à tout, du front-end au back-end, en
-          passant par l’intégration SEO pour améliorer la visibilité des sites.
-          Aujourd’hui, je suis focalisé sur l’accompagnement de mes clients dans
-          la création de sites WordPress sur-mesure, l’optimisation de la
-          performance web, et la mise en place de stratégies SEO pour booster
-          leur visibilité. <br />
-          Que ce soit pour des sites vitrine, des plateformes e-commerce ou des
-          applications web, je mets un point d’honneur à offrir des solutions
-          efficaces, créatives et adaptées aux besoins de chaque projet. <br />
-          Toujours en quête de nouveaux défis, je m’intéresse de près aux
-          dernières innovations, particulièrement dans l’écosystème
-          React/Next.js.
+          Directrice artistique à Paris, je mets ma créativité et mon expertise
+          au service des entreprises et entrepreneurs souhaitant développer une
+          identité visuelle forte et cohérente. Spécialisée en communication
+          360°, j’accompagne mes clients dans la conception de leur image de
+          marque, du logo à la charte graphique, en passant par la direction
+          artistique de leurs supports print et digitaux. Mon objectif : révéler
+          l’essence de votre projet à travers des visuels uniques, impactants et
+          alignés avec vos valeurs. Ensemble, donnons vie à une communication
+          globale qui vous distingue et marque durablement les esprits.
         </p>
-        <p className="text-cobalt mt-5 hidden text-xl font-bold italic lg:block font-serif ">
+        <p className="text-cobalt mt-5 hidden font-serif text-xl font-bold italic lg:block">
           "S'il vous plait, débarrassez ma photo de tous ces stickers. Merci !"
         </p>
         <p className="hidden font-semibold lg:block">Julia CARO</p>
@@ -49,6 +37,25 @@ const Page = () => {
       </article>
     </main>
   )
+}
+
+export const metadata = {
+  title: "À propos – Julia CARO, directrice artistique à Paris",
+  description:
+    "Découvrez le parcours, la vision et l’expertise de Julia CARO, directrice artistique freelance à Paris, spécialisée en identité visuelle et communication 360°.",
+  openGraph: {
+    title: "À propos – Julia CARO, directrice artistique à Paris",
+    description:
+      "Découvrez le parcours, la vision et l’expertise de Julia CARO, directrice artistique freelance à Paris, spécialisée en identité visuelle et communication 360°.",
+    images: [
+      {
+        url: "/profil.webp",
+        width: 800,
+        height: 800,
+        alt: "Portrait de Julia CARO"
+      }
+    ]
+  }
 }
 
 export default Page

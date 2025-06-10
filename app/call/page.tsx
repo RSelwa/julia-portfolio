@@ -1,13 +1,22 @@
-"use client"
-
-import { InlineWidget } from "react-calendly"
+import Calendly from "@/components/calendly"
 
 const Page = () => {
   return (
     <main className="min-h-full-height">
-      <InlineWidget url="https://calendly.com/julia-caro30pro/30min" />
+      <Calendly />
     </main>
   )
+}
+
+export const metadata = {
+  title: "Prendre rendez-vous – Julia CARO",
+  description:
+    "Planifiez un appel avec Julia CARO, directrice artistique à Paris, pour discuter de votre projet de communication visuelle ou digitale.",
+  openGraph: {
+    title: "Prendre rendez-vous – Julia CARO",
+    description:
+      "Planifiez un appel avec Julia CARO, directrice artistique à Paris, pour discuter de votre projet de communication visuelle ou digitale."
+  }
 }
 
 export default Page

@@ -9,7 +9,8 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Julia CARO - Directrice artistique",
-  description: "Julia CARO - Directrice artistique parisienne"
+  description: "Julia CARO - Directrice artistique parisienne",
+  applicationName: "Julia CARO - Directrice artistique"
 }
 
 export default function RootLayout({
@@ -18,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="lg:overflow-x-hidden">
+    <html lang="fr" suppressHydrationWarning>
+      <body className="bg-beige lg:overflow-x-hidden">
         <ScrollSmootherComp>
           <ThemeProvider
             attribute="class"

@@ -1,6 +1,7 @@
 import TransitionLink from "@/components/transition-link"
 import { PROJECTS } from "@/constants"
 import { LINKS } from "@/constants/navigation"
+import type { Metadata } from "next"
 import Image from "next/image"
 import { redirect } from "next/navigation"
 
@@ -10,6 +11,31 @@ export const generateStaticParams = async () => {
   return projects.map((post) => ({
     projectId: post.id
   }))
+}
+
+export async function generateMetadata({
+  params
+}: {
+  params: { projectId: string }
+}): Promise<Metadata> {
+  const project = Object.values(PROJECTS).find((p) => p.id === params.projectId)
+  if (!project) {
+    return {
+      title: "Projet introuvable – Julia CARO",
+      description: "Ce projet n'existe pas ou a été supprimé."
+    }
+  }
+  return {
+    title: `${project.title} – Projet de Julia CARO, directrice artistique à Paris`,
+    description: project.description,
+    openGraph: {
+      title: `${project.title} – Projet de Julia CARO, directrice artistique à Paris`,
+      description: project.description,
+      images: project.images?.cover
+        ? [{ url: project.images.cover, alt: project.title }]
+        : undefined
+    }
+  }
 }
 
 const Page = async ({ params }: { params: Promise<{ projectId: string }> }) => {

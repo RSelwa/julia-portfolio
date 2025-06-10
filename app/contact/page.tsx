@@ -1,14 +1,19 @@
-"use client"
-
 /* eslint-disable react/no-unescaped-entities */
+import CopyButton from "@/components/copy-button"
 import { CONTACT_EMAIL } from "@/constants"
-import { CopyIcon } from "lucide-react"
-import { useCopyToClipboard } from "react-use"
-import { toast } from "sonner"
+
+export const metadata = {
+  title: "Contact – Julia CARO, directrice artistique à Paris",
+  description:
+    "Contactez Julia CARO pour vos projets de direction artistique, identité visuelle ou communication digitale à Paris.",
+  openGraph: {
+    title: "Contact – Julia CARO, directrice artistique à Paris",
+    description:
+      "Contactez Julia CARO pour vos projets de direction artistique, identité visuelle ou communication digitale à Paris."
+  }
+}
 
 const Page = () => {
-  const [, copyToClipboard] = useCopyToClipboard()
-
   return (
     <main className="min-h-full-height p-9">
       <h1 className="text-size-h1 text-cobalt font-serif font-bold">Contact</h1>
@@ -29,21 +34,7 @@ const Page = () => {
           >
             {CONTACT_EMAIL}
           </a>
-          <button
-            className="text-cobalt"
-            onClick={() => {
-              copyToClipboard(CONTACT_EMAIL)
-              console.log("Email copied to clipboard:", CONTACT_EMAIL)
-
-              toast("Email copié dans le presse-papier !", {
-                duration: 2000,
-
-                position: "bottom-right"
-              })
-            }}
-          >
-            <CopyIcon />
-          </button>
+          <CopyButton />
         </span>
       </article>
     </main>
