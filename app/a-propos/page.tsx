@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Stickers } from "@/components/stickers"
 
 const Page = () => {
   return (
@@ -33,7 +32,7 @@ const Page = () => {
           alt="me :)"
           className="size-full object-cover"
         />
-        <Stickers />
+        {/* <Stickers /> */}
       </article>
     </main>
   )

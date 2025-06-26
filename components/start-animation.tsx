@@ -1,5 +1,6 @@
 "use client"
 
+import Logo from "@/components/logo"
 import { motion } from "motion/react"
 
 const StartAnimation = () => {
@@ -8,9 +9,9 @@ const StartAnimation = () => {
       initial={{ height: "100%" }}
       animate={{ height: 0 }}
       transition={{ duration: 0.5, ease: "easeInOut", delay: 1 }}
-      className="fixed inset-0 z-50 bg-cobalt overflow-hidden text-white font-semibold flex flex-col items-center justify-center"
+      className="bg-cobalt fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden font-semibold text-white"
     >
-      HI
+      <Logo className="h-40" />
     </motion.div>
   )
 }
