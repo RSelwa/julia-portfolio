@@ -96,7 +96,7 @@ export default function Home() {
               />
               <div
                 style={{ backgroundImage: `url(${cover})` }}
-                className="group-hover:animate-slideIn fixed top-0 left-0 z-20 flex h-full w-0 flex-col justify-between overflow-hidden bg-cover bg-center text-lg text-white"
+                className="group-hover:animate-slideIn fixed top-0 left-0 z-20 hidden h-full w-0 flex-col justify-between overflow-hidden bg-cover bg-center text-lg text-white lg:flex"
               >
                 <span className="bg-gradient-to-b from-black/50 to-transparent py-4">
                   {formatDate(date)}

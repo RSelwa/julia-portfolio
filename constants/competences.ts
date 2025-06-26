@@ -13,6 +13,11 @@ export const COMPETENCES = {
   ILLUSTRATION: "Illustration",
   MOTION_DESIGN: "Motion Design",
   WEB_DESIGN: "Web Design",
+  DESIGN: "Design",
   UI_UX: "UI/UX",
-  PHOTOGRAPHIE: "Photographie"
+  PHOTOGRAPHIE: "Photographie",
+  DIRECTION_ARTISTIQUE: "Direction artistique",
+  CAPTATION_VIDEO: "Captation vidéo",
+  MONTAGE_VIDEO: "Montage vidéo",
+  HABILLAGE_VIDEO: "Habillage de vidéo"
 } as const
